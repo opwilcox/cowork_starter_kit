@@ -1,0 +1,34 @@
+# Data files (too large for git)
+data/*
+!data/.gitkeep
+
+
+# Working directory outputs
+work/*
+!work/.gitkeep
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Outputs (may want to version control some)
+*.png
+*.jpg
+*.pdf
+*.html
+!examples/*.png  # Keep example images if any
+
+# Data outputs
+*.csv
+*.xlsx
+!examples/*.csv  # Keep example data
+
+# Logs
+*.log

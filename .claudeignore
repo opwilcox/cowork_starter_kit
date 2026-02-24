@@ -1,0 +1,90 @@
+# Fraym Claude Code - Ignore Patterns
+# Prevent Claude from reading large or unnecessary files
+
+# =============================================================================
+# Data Files - Large binary and raster files
+# =============================================================================
+
+# Raster files (typically 10-500MB each)
+data/**/*.tif
+data/**/*.tiff
+data/**/*.geotiff
+
+# Geopackage files (can be large)
+data/**/*.gpkg
+
+# Raw survey data (if present)
+data/**/raw_data/
+data/**/raw_surveys/
+
+# =============================================================================
+# Output Files
+# =============================================================================
+
+# Large rendered outputs
+work/**/*.html
+work/**/*.pdf
+work/**/*.docx
+
+# Image outputs
+work/**/*.png
+work/**/*.jpg
+work/**/*.jpeg
+work/**/*.svg
+
+# =============================================================================
+# System and Version Control
+# =============================================================================
+
+# Git directory
+.git/
+.gitignore
+
+# R system files
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+
+# =============================================================================
+# Dependencies and Packages
+# =============================================================================
+
+# R package library
+renv/
+packrat/
+
+# =============================================================================
+# Temporary and Cache Files
+# =============================================================================
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# =============================================================================
+# Documentation (read as needed, not automatically)
+# =============================================================================
+
+# Old/archived documentation
+archive/
+archived/
+old/
+
+# =============================================================================
+# Notes
+# =============================================================================
+#
+# This file prevents Claude from automatically reading large files.
+# Claude can still access these files when explicitly requested.
+#
+# To see what files Claude is reading, check the conversation context.
+# To allow Claude to read a specific ignored file, explicitly request it.
+#
